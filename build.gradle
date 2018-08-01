@@ -1,18 +1,16 @@
 /*
- * Copyright (c) 2018 Gustavo E Bonilla - TransferWise Tech Test
- *
+ * Copyright (c) 2018 TransferWise Tech Test
  * StarWarsTransferWiseTechTest
  * build.gradle
- *
  * Author: Gustavo E Bonilla <gebonilla@gmail.com>
- * Date: July 25, 2018
+ * Date: July 29, 2018
  */
 
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
   ext.kotlin_version = '1.2.51'
-  ext.kotlin_version = '1.2.30'
+
     repositories {
         google()
         jcenter()

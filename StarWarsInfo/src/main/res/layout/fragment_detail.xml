@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2018 TransferWise Tech Test
+  ~ StarWarsTransferWiseTechTest
+  ~ fragment_detail.xml
+  ~ Author: Gustavo E Bonilla <gebonilla@gmail.com>
+  ~ Date: July 29, 2018
+  -->
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detailinfo.view.DetailFragment">
+
+  <com.nvanbenschoten.motion.ParallaxImageView
+      android:id="@+id/background"
+      android:layout_width="@dimen/zero_value"
+      android:layout_height="@dimen/zero_value"
+      android:src="@drawable/background_edited"
+      android:scaleType="fitXY"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+  <ImageView
+      android:id="@+id/detailImage"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/detail_image_height"
+      android:contentDescription="@string/app_name"
+      app:layout_constraintBottom_toTopOf="@+id/topPane"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+  <View
+      android:id="@+id/topPane"
+      android:layout_width="@dimen/zero_value"
+      android:layout_height="@dimen/top_pane_height"
+      android:background="@drawable/top_pane"
+      app:layout_constraintBottom_toTopOf="@+id/scrollView"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/detailImage"/>
+
+  <ScrollView
+      android:id="@+id/scrollView"
+      android:layout_width="@dimen/zero_value"
+      android:layout_height="@dimen/zero_value"
+      app:layout_constraintBottom_toTopOf="@+id/belowPane"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/detailImage">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/infoContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <TextView
+          android:id="@+id/detailTitle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="@dimen/regular_margin"
+          android:layout_marginStart="@dimen/regular_margin"
+          android:layout_marginTop="@dimen/regular_margin"
+          android:textColor="@color/yellow_starwars"
+          android:textSize="@dimen/detail_title_text_size"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"/>
+
+      <TextView
+          android:id="@+id/detailFirstText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="@dimen/regular_margin"
+          android:layout_marginStart="@dimen/regular_margin"
+          android:layout_marginTop="@dimen/regular_margin"
+          android:textColor="@color/gray_starwars"
+          android:textSize="@dimen/detail_common_text_size"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/detailTitle"/>
+
+      <TextView
+          android:id="@+id/detailSecondText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="@dimen/regular_margin"
+          android:layout_marginStart="@dimen/regular_margin"
+          android:layout_marginTop="@dimen/regular_margin"
+          android:textColor="@color/gray_starwars"
+          android:textSize="@dimen/detail_common_text_size"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/detailFirstText"/>
+
+      <TextView
+          android:id="@+id/detailThirdText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="@dimen/regular_margin"
+          android:layout_marginStart="@dimen/regular_margin"
+          android:layout_marginTop="@dimen/regular_margin"
+          android:textColor="@color/gray_starwars"
+          android:textSize="@dimen/detail_common_text_size"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/detailSecondText"/>
+
+      <TextView
+          android:id="@+id/detailFourthText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="@dimen/regular_margin"
+          android:layout_marginStart="@dimen/regular_margin"
+          android:layout_marginTop="@dimen/regular_margin"
+          android:textColor="@color/gray_starwars"
+          android:textSize="@dimen/detail_common_text_size"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/detailThirdText"
+          tools:text="Producer"/>
+
+      <TextView
+          android:id="@+id/detailFifthText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="@dimen/regular_margin"
+          android:layout_marginStart="@dimen/regular_margin"
+          android:layout_marginTop="@dimen/regular_margin"
+          android:textColor="@color/gray_starwars"
+          android:textSize="@dimen/detail_common_text_size"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/detailFourthText"
+          tools:text="It is a period of civil war.\n\nRebel spaceships, striking\n\nfrom a hidden base, have won\n\ntheir first victory against\n\nthe evil Galactic Empire.\n\n\n\nDuring the battle, Rebel\n\nspies managed to steal secret\r\nplans to the Empire's\n\nultimate weapon, the DEATH\n\nSTAR, an armored space\n\nstation with enough power\n\nto destroy an entire planet.\n\n\n\nPursued by the Empire's\n\nsinister agents, Princess\n\nLeia races home aboard her\n\nstarship, custodian of the\n\nstolen plans that can save her\n\npeople and restore\n\nfreedom to the galaxy...."/>
+
+      <Button
+          android:id="@+id/detailButtonAction"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="@dimen/regular_margin"
+          android:layout_marginStart="@dimen/regular_margin"
+          android:layout_marginTop="@dimen/regular_margin"
+          android:background="@color/black_transparent"
+          android:text="@string/btn_detail_film"
+          android:textColor="@color/yellow_starwars"
+          android:textSize="@dimen/detail_common_text_size"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/detailFifthText"
+          tools:text=""/>
+
+    </android.support.constraint.ConstraintLayout>
+  </ScrollView>
+
+  <TextView
+      android:id="@+id/errorView"
+      android:layout_width="@dimen/zero_value"
+      android:layout_height="@dimen/zero_value"
+      android:visibility="gone"
+      android:text="@string/common_error_message"
+      android:textColor="@color/yellow_starwars"
+      android:gravity="center"
+      android:layout_marginStart="@dimen/error_margin"
+      android:layout_marginEnd="@dimen/error_margin"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toBottomOf="@id/belowPane"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"/>
+
+  <View
+      android:id="@+id/belowPane"
+      android:layout_width="@dimen/zero_value"
+      android:layout_height="@dimen/top_pane_height"
+      android:background="@drawable/top_pane_reverse"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"/>
+</android.support.constraint.ConstraintLayout>

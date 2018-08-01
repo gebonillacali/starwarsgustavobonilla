@@ -1,11 +1,9 @@
 /*
- * Copyright (c) 2018 Gustavo E Bonilla - TransferWise Tech Test
- *
+ * Copyright (c) 2018 TransferWise Tech Test
  * StarWarsTransferWiseTechTest
- * StartwarsApi.kt
- *
+ * StarWarsApi.kt
  * Author: Gustavo E Bonilla <gebonilla@gmail.com>
- * Date: July 26, 2018
+ * Date: July 29, 2018
  */
 
 package com.transferwise.gustavobonilla.swapi.api
@@ -26,6 +24,9 @@ class StarWarsApi {
   companion object {
     private const val API_URL = "https://swapi.co/"
 
+    /**
+     * Create the instance of [Retrofit] for the [StarWars] endpoint.
+     */
     fun create(): StarWars {
       val retrofit = Retrofit.Builder()
           .client(OkHttpClient())
@@ -40,6 +41,9 @@ class StarWarsApi {
     }
   }
 
+  /**
+   * Gets the instance of the [StarWarsApi] API.
+   */
   fun api(): StarWars {
     return startWarsApi
   }

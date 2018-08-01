@@ -1,17 +1,18 @@
 /*
- * Copyright (c) 2018 Gustavo E Bonilla - TransferWise Tech Test
- *
+ * Copyright (c) 2018 TransferWise Tech Test
  * StarWarsTransferWiseTechTest
  * Planet.kt
- *
  * Author: Gustavo E Bonilla <gebonilla@gmail.com>
- * Date: July 25, 2018
+ * Date: July 29, 2018
  */
 
 package com.transferwise.gustavobonilla.swapi.model
 
+import android.arch.persistence.room.Entity
+import android.arch.persistence.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
+@Entity(tableName = "planets")
 data class Planet(
   val name: String?,
   val diameter: String?,
@@ -21,6 +22,8 @@ data class Planet(
   val terrain: String?,
   val created: String?,
   val edited: String?,
+
+  @PrimaryKey
   val url: String,
 
   @SerializedName("rotation_period")
@@ -33,9 +36,9 @@ data class Planet(
   val surfaceWater: String?,
 
   @SerializedName("residents")
-  val residentsUrls: List<String>?,
+  val residentsUrls: List<String>,
 
   @SerializedName("films")
-  val filmsUrls: List<String>?): StarWarsModel() {
+  val filmsUrls: List<String>): StarWarsModel() {
   override fun getItemUrl(): String = url
 }

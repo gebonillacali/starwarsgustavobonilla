@@ -1,18 +1,19 @@
 /*
- * Copyright (c) 2018 Gustavo E Bonilla - TransferWise Tech Test
- *
+ * Copyright (c) 2018 TransferWise Tech Test
  * StarWarsTransferWiseTechTest
  * Vehicule.kt
- *
  * Author: Gustavo E Bonilla <gebonilla@gmail.com>
- * Date: July 25 = null, 2018
+ * Date: July 29, 2018
  */
 
 package com.transferwise.gustavobonilla.swapi.model
 
+import android.arch.persistence.room.Entity
+import android.arch.persistence.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
-open class Vehicle(
+@Entity(tableName = "vehicules")
+class Vehicle(
     var name: String? = null,
     var model: String? = null,
 
@@ -37,12 +38,14 @@ open class Vehicle(
     var consumables: String? = null,
     var created: String? = null,
     var edited: String? = null,
-    var url: String? = null,
+
+    @PrimaryKey
+    var url: String,
 
     @SerializedName("pilots")
-    var pilotsUrls: ArrayList<String>? = null,
+    var pilotsUrls: List<String>? = null,
 
     @SerializedName("films")
-    var filmsUrls: ArrayList<String>? = null): StarWarsModel() {
-  override fun getItemUrl(): String = url ?: "0"
+    var filmsUrls: List<String>? = null): StarWarsModel() {
+  override fun getItemUrl(): String = url
 }

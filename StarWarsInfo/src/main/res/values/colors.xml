@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2018 TransferWise Tech Test
+  ~ StarWarsTransferWiseTechTest
+  ~ colors.xml
+  ~ Author: Gustavo E Bonilla <gebonilla@gmail.com>
+  ~ Date: July 29, 2018
+  -->
+
 <resources>
   <color name="black">#000000</color>
-  <color name="colorPrimary">#3F51B5</color>
-  <color name="colorPrimaryDark">#303F9F</color>
-  <color name="colorAccent">#FF4081</color>
+  <color name="colorPrimary">#000000</color>
+  <color name="colorPrimaryDark">#000000</color>
+  <color name="colorAccent">#000000</color>
+  <color name="black_overlay">#44222222</color>
+  <color name="black_transparent">#00000000</color>
+  <color name="white">#FFFFFF</color>
+  <color name="yellow_starwars">#EDEC51</color>
+  <color name="gray_starwars">#AAA</color>
 </resources>

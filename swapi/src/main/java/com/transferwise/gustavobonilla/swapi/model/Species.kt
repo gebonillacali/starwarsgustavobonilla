@@ -1,17 +1,18 @@
 /*
- * Copyright (c) 2018 Gustavo E Bonilla - TransferWise Tech Test
- *
+ * Copyright (c) 2018 TransferWise Tech Test
  * StarWarsTransferWiseTechTest
  * Species.kt
- *
  * Author: Gustavo E Bonilla <gebonilla@gmail.com>
- * Date: July 25, 2018
+ * Date: July 29, 2018
  */
 
 package com.transferwise.gustavobonilla.swapi.model
 
+import android.arch.persistence.room.Entity
+import android.arch.persistence.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
+@Entity(tableName = "species")
 data class Species(
   val name: String?,
   val classification: String?,
@@ -38,6 +39,8 @@ data class Species(
   val language: String?,
   val created: String?,
   val edited: String?,
+
+  @PrimaryKey
   val url: String,
 
   @SerializedName("people")

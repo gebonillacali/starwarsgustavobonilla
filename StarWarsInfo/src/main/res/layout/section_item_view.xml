@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2018 TransferWise Tech Test
+  ~ StarWarsTransferWiseTechTest
+  ~ section_item_view.xml
+  ~ Author: Gustavo E Bonilla <gebonilla@gmail.com>
+  ~ Date: July 29, 2018
+  -->
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/section_item_height"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+  <ImageView
+      android:id="@+id/leftImage"
+      android:layout_width="@dimen/image_logo_size"
+      android:layout_height="@dimen/image_logo_size"
+      android:layout_marginBottom="@dimen/regular_margin"
+      android:layout_marginLeft="@dimen/regular_margin"
+      android:layout_marginStart="@dimen/regular_margin"
+      android:layout_marginTop="@dimen/regular_margin"
+      android:scaleType="fitCenter"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintRight_toRightOf="@+id/rootTitle"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+  <TextView
+      android:id="@+id/sectionTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/regular_margin"
+      android:layout_marginTop="@dimen/regular_margin"
+      android:textColor="@color/white"
+      android:textSize="@dimen/detail_common_text_size"
+      app:layout_constraintBottom_toBottomOf="@+id/firstTextItem"
+      app:layout_constraintLeft_toRightOf="@+id/leftImage"
+      app:layout_constraintRight_toLeftOf="@+id/rightImage"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+  <TextView
+      android:id="@+id/firstTextItem"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/white"
+      android:textSize="@dimen/section_item_text_size"
+      android:maxLines="2"
+      app:layout_constraintBottom_toBottomOf="@+id/secondTextItem"
+      app:layout_constraintLeft_toRightOf="@+id/leftImage"
+      app:layout_constraintRight_toLeftOf="@+id/rightImage"
+      app:layout_constraintTop_toTopOf="@+id/sectionTitle"/>
+
+  <TextView
+      android:id="@+id/secondTextItem"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/regular_margin"
+      android:layout_marginTop="@dimen/regular_margin"
+      android:textColor="@color/white"
+      android:textSize="@dimen/section_item_text_size"
+      android:maxLines="2"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toRightOf="@+id/leftImage"
+      app:layout_constraintRight_toLeftOf="@+id/rightImage"
+      app:layout_constraintTop_toTopOf="@+id/firstTextItem"/>
+
+  <ImageView
+      android:id="@+id/rightImage"
+      android:layout_width="@dimen/image_logo_size"
+      android:layout_height="@dimen/image_logo_size"
+      android:layout_marginBottom="@dimen/regular_margin"
+      android:layout_marginEnd="@dimen/regular_margin"
+      android:layout_marginRight="@dimen/regular_margin"
+      android:layout_marginTop="@dimen/regular_margin"
+      android:scaleType="fitCenter"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintLeft_toLeftOf="@+id/rootTitle"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

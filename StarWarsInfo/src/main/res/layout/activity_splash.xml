@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2018 TransferWise Tech Test
+  ~ StarWarsTransferWiseTechTest
+  ~ activity_splash.xml
+  ~ Author: Gustavo E Bonilla <gebonilla@gmail.com>
+  ~ Date: July 29, 2018
+  -->
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".SplashActivity">
+
+  <VideoView
+      android:id="@+id/video"
+      android:layout_width="@dimen/zero_value"
+      android:layout_height="@dimen/splash_video_height"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"/>
+
+  <TextView
+      android:id="@+id/continueText"
+      android:layout_width="@dimen/zero_value"
+      android:layout_height="wrap_content"
+      app:layout_constraintTop_toBottomOf="@id/video"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      android:gravity="center"
+      android:textColor="@color/white"
+      android:text="@string/splash_continue_text"
+      android:textSize="@dimen/splash_continue_text_size"/>
+
+  <View
+      android:id="@+id/continueButton"
+      android:layout_width="@dimen/zero_value"
+      android:layout_height="@dimen/zero_value"
+      android:alpha="0"
+      android:focusable="true"
+      android:clickable="true"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

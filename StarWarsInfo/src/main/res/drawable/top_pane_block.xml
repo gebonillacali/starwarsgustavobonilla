@@ -1,0 +1,17 @@
+<!--
+  ~ Copyright (c) 2018 TransferWise Tech Test
+  ~ StarWarsTransferWiseTechTest
+  ~ top_pane_block.xml
+  ~ Author: Gustavo E Bonilla <gebonilla@gmail.com>
+  ~ Date: July 29, 2018
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="100dp"
+        android:height="10dp"
+        android:viewportWidth="100"
+        android:viewportHeight="10">
+    <path
+        android:fillColor="#edec51"
+        android:pathData="M 0,0 L 100,0 100,10 L 100, 10 0, 10 z"/>
+</vector>

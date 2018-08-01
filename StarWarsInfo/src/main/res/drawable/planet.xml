@@ -1,0 +1,28 @@
+<!--
+  ~ Copyright (c) 2018 TransferWise Tech Test
+  ~ StarWarsTransferWiseTechTest
+  ~ planet.xml
+  ~ Author: Gustavo E Bonilla <gebonilla@gmail.com>
+  ~ Date: July 29, 2018
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="512.000000dp"
+        android:height="512.000000dp"
+        android:viewportWidth="512.000000"
+        android:viewportHeight="512.000000">
+
+    <group
+        android:translateY="512.000000"
+        android:scaleX="0.100000"
+        android:scaleY="-0.100000">
+        <path
+            android:fillColor="#FFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M2360 5094 c-532 -48 -1005 -235 -1400 -553 -537 -433 -887 -1102 -927 -1773 l-6 -108 2517 0 2517 0 -5 33 c-3 17 -8 75 -11 127 -6 87 -28 241 -41 283 -5 16 -38 17 -515 17 l-509 0 0 85 0 85 180 0 180 0 0 95 0 95 -360 0 -360 0 0 85 0 85 270 0 270 0 0 95 0 95 -90 0 -90 0 0 90 0 90 -180 0 -180 0 0 85 0 85 90 0 90 0 0 95 0 95 -180 0 -180 0 0 85 0 85 90 0 90 0 0 154 0 154 -82 35 c-193 82 -432 150 -648 182 -102 15 -438 27 -530 19z m-505 -578 c417 -134 620 -610 425 -996 -170 -336 -578 -486 -919 -338 -128 56 -262 176 -334 299 -173 295 -103 684 164 906 71 58 216 129 304 148 103 22 258 14 360 -19z" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M34 2383 c35 -577 307 -1168 731 -1588 203 -202 399 -341 660 -470 192 -95 311 -139 506 -189 328 -83 695 -98 1028 -40 129 22 121 16 121 90 l0 64 -85 0 -85 0 0 85 0 85 265 0 265 0 0 90 0 90 90 0 90 0 0 90 0 90 270 0 270 0 0 90 0 90 90 0 90 0 0 95 0 95 -180 0 -180 0 0 90 0 90 -270 0 -270 0 0 85 0 85 180 0 180 0 0 90 0 90 360 0 360 0 0 95 0 95 -180 0 -180 0 0 85 0 85 419 0 c391 0 420 1 425 18 13 43 36 198 41 283 3 52 8 106 10 122 l4 27 -2516 0 -2516 0 7 -107z" />
+    </group>
+</vector>

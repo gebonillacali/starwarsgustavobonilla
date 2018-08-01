@@ -1,2 +1,10 @@
+<!--
+  ~ Copyright (c) 2018 TransferWise Tech Test
+  ~ StarWarsTransferWiseTechTest
+  ~ AndroidManifest.xml
+  ~ Author: Gustavo E Bonilla <gebonilla@gmail.com>
+  ~ Date: July 29, 2018
+  -->
+
 <manifest package="com.transferwise.gustavobonilla.swapi"
           xmlns:android="http://schemas.android.com/apk/res/android"/>

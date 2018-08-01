@@ -1,16 +1,15 @@
 <!--
-  ~ Copyright (c) 2018 Gustavo E Bonilla - TransferWise Tech Test
-  ~
+  ~ Copyright (c) 2018 TransferWise Tech Test
   ~ StarWarsTransferWiseTechTest
   ~ strings.xml
-  ~
   ~ Author: Gustavo E Bonilla <gebonilla@gmail.com>
-  ~ Date: July 26, 2018
+  ~ Date: July 29, 2018
   -->
 
 <resources>
-  <string name="app_name">StarWars TransferWise TechTest</string>
+  <string name="app_name">StarWars</string>
+  <string name="btn_detail_film">Opening Crawl for this Film</string>
+  <string name="splash_continue_text">Tap at any moment to Continue</string>
+  <string name="common_error_message">We do not have information for this screen, please connect to internet and try again.</string>
 
-  <!-- TODO: Remove or change this placeholder text -->
-  <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

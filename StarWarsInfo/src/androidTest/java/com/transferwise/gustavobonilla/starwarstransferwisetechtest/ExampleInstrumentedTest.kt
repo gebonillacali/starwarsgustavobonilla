@@ -1,3 +1,11 @@
+/*
+ * Copyright (c) 2018 TransferWise Tech Test
+ * StarWarsTransferWiseTechTest
+ * ExampleInstrumentedTest.kt
+ * Author: Gustavo E Bonilla <gebonilla@gmail.com>
+ * Date: July 29, 2018
+ */
+
 package com.transferwise.gustavobonilla.starwarstransferwisetechtest
 
 import android.support.test.InstrumentationRegistry

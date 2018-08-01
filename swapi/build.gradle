@@ -1,5 +1,14 @@
+/*
+ * Copyright (c) 2018 TransferWise Tech Test
+ * StarWarsTransferWiseTechTest
+ * build.gradle
+ * Author: Gustavo E Bonilla <gebonilla@gmail.com>
+ * Date: July 29, 2018
+ */
+
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
 
 android {
   compileSdkVersion 27

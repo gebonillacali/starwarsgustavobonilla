@@ -1,0 +1,56 @@
+<!--
+  ~ Copyright (c) 2018 TransferWise Tech Test
+  ~ StarWarsTransferWiseTechTest
+  ~ vehicles.xml
+  ~ Author: Gustavo E Bonilla <gebonilla@gmail.com>
+  ~ Date: July 29, 2018
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="225.000000dp"
+        android:height="225.000000dp"
+        android:viewportWidth="225.000000"
+        android:viewportHeight="225.000000">
+
+    <group
+        android:translateY="225.000000"
+        android:scaleX="0.100000"
+        android:scaleY="-0.100000">
+        <path
+            android:fillColor="#FFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M1219 1815 c-19 -27 -45 -43 -129 -78 l-105 -43 -3 -157 -3 -157 476 0 476 0 -3 156 -3 156 -125 40 c-110 35 -129 45 -160 79 l-35 39 -181 0 -181 0 -24 -35z" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M428 1587 c-72 -49 -77 -54 -80 -92 l-3 -40 -52 -3 c-71 -4 -68 -22 3 -22 54 0 55 0 52 -27 -3 -25 -7 -28 -48 -31 -53 -4 -68 -15 -50 -37 10 -12 42 -15 184 -15 l172 0 29 30 c19 20 39 30 57 30 l29 0 -3 128 -3 127 -105 2 -105 2 -77 -52z m126 -48 c37 -29 37 -89 0 -118 -15 -12 -37 -21 -49 -21 -12 0 -34 9 -49 21 -20 16 -26 29 -26 59 0 30 6 43 26 59 15 12 37 21 49 21 12 0 34 -9 49 -21z" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M1029 1305 c-32 -17 -53 -65 -46 -102 7 -39 -48 -202 -80 -235 -20 -21 -26 -37 -25 -70 0 -26 -17 -92 -44 -169 -24 -70 -44 -130 -44 -133 0 -4 37 -6 82 -4 l81 3 15 43 c7 23 20 42 28 42 8 0 37 -11 64 -25 27 -14 53 -25 58 -25 6 0 72 122 72 134 0 2 -29 17 -65 32 -50 22 -64 32 -59 44 4 8 10 42 14 75 3 33 15 86 25 118 17 52 27 64 98 122 l80 65 124 0 123 0 80 -52 80 -53 0 -77 c0 -42 -4 -80 -10 -83 -18 -11 -11 -91 10 -118 11 -14 29 -70 43 -133 l23 -109 81 -3 80 -3 -24 103 c-13 57 -26 137 -28 178 -3 41 -8 111 -11 155 -5 78 2 115 52 278 5 16 -20 17 -423 17 -350 -1 -433 -3 -454 -15z" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M820 1095 c-61 -54 -109 -89 -133 -95 -39 -11 -77 -57 -77 -93 0 -28 29 -85 48 -93 9 -4 37 -10 62 -14 25 -4 52 -10 61 -14 20 -9 27 11 38 107 6 49 16 77 36 102 20 27 75 160 75 182 0 12 -26 -8 -110 -82z" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M1507 1077 c-19 -40 -46 -81 -59 -89 -39 -25 -53 -71 -39 -119 8 -28 10 -77 5 -160 l-7 -119 76 0 76 0 5 43 c3 23 8 75 11 115 3 41 12 86 20 102 8 16 15 40 15 54 0 14 7 43 16 65 8 21 14 56 12 77 -3 32 -10 43 -50 71 l-46 34 -35 -74z" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M1262 763 c-22 -8 -104 -183 -98 -207 3 -12 21 -29 40 -38 l34 -17 56 116 c31 64 55 117 54 118 -6 5 -67 35 -70 34 -2 0 -9 -3 -16 -6z" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M732 518 c-7 -7 -12 -29 -12 -50 l0 -38 130 0 130 0 0 38 c0 21 -5 43 -12 50 -16 16 -220 16 -236 0z" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M1362 518 c-7 -7 -12 -29 -12 -50 l0 -38 130 0 130 0 0 38 c0 21 -5 43 -12 50 -16 16 -220 16 -236 0z" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M1732 518 c-7 -7 -12 -29 -12 -50 l0 -38 130 0 130 0 0 38 c0 21 -5 43 -12 50 -16 16 -220 16 -236 0z" />
+    </group>
+</vector>
